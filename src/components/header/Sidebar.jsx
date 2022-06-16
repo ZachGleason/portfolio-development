@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
+import logos from '../../assets/logo.png'
 
 
 // logo name
@@ -17,12 +18,12 @@ const sidebarContent = [
     itemRoute: "#service",
     activeClass: "",
   },
-  // {
-  //   icon: "testimonial",
-  //   itemName: "Testimonial",
-  //   itemRoute: "#testimonial",
-  //   activeClass: "",
-  // },
+  {
+    icon: "testimonial",
+    itemName: "Testimonial",
+    itemRoute: "#testimonial",
+    activeClass: "",
+  },
   {
     icon: "contact",
     itemName: "Contact",
@@ -33,7 +34,6 @@ const sidebarContent = [
 
 // sidebar footer bottom content
 const sidebarFooterContent = {
-  avatar: "img/about/avatar.jpg",
   name: "Zach Gleason",
   email: "zgleason37@gmail.com",
   emailRef: "mailto:zgleason37@gmail.com",
@@ -59,16 +59,16 @@ const Sidebar = () => {
       >
         <div className="sidebar_inner">
           <div className="logo">
-            <Link to="/regular">
+            <Link to="/">
               <img
                 className="logo_dark"
-                src={`https://cdn-icons.flaticon.com/png/512/5671/premium/5671194.png?token=exp=1655239864~hmac=fd72a6c5a66c248810fa3296678472e1`}
+                src={logos}
                 style={{height: 40}}
                 alt="brand"
               />
               <img
                 className="logo_light"
-                src={`https://cdn-icons.flaticon.com/png/512/5671/premium/5671194.png?token=exp=1655239864~hmac=fd72a6c5a66c248810fa3296678472e1`}
+                src={logos}
                 style={{height: 40}}
                 alt="brand"
               />
@@ -115,16 +115,6 @@ const Sidebar = () => {
 
           <div className="author">
             <div className="inner">
-              <div className="image">
-                <div
-                  className="main"
-                  style={{
-                    backgroundImage: `url(${
-                      process.env.PUBLIC_URL + sidebarFooterContent.avatar
-                    })`,
-                  }}
-                ></div>
-              </div>
               <div className="short">
                 <h3>{sidebarFooterContent.name}</h3>
                 <a href={sidebarFooterContent.emailRef}>

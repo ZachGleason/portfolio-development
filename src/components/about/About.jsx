@@ -31,7 +31,7 @@ const About = () => {
               </h3>
               <p>
               A highly motivated, creative, and intuitive full-stack software engineer who has a huge passion for computers and anything technology related. 
-              Anything and everything that can be classified as technology excites me!
+              Anything and everything that can be classified as technology excites me! Currently living in Sonoma County, Caliornia.
               </p>
             </div>
             <div className="my_skills">
@@ -61,12 +61,11 @@ const About = () => {
 
               <div
                 className="main"
-                style={{
-                  backgroundImage: `url(${
-                    process.env.PUBLIC_URL + "img/about/2.jpg"
-                  })`,
-                }}
                 data-aos="fade-left"
+                style={{
+                  backgroundImage: `url(${'https://gcdnb.pbrd.co/images/ZTxUegVZuu1b.jpg?o=1'})`,
+                  width: "100%"
+                }}
                 data-aos-duration="1200"
                 data-aos-delay="200"
               ></div>

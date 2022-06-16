@@ -1,66 +1,63 @@
-import React from "react";
+import React, {useRef} from "react";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const form = useRef();
 
-  const onSubmit = (data, e) => {
-    e.target.reset();
-    console.log("Message submited: " + JSON.stringify(data));
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_n9nc0mc', 'template_x1np6y9', form.current, 'tK1c7F3Y4wTrkkdZ-')
+    .then((result) => {
+      console.log(result.text);
+      Swal.fire({
+        icon: 'success',
+        title: 'Message Sent Successfully'
+      })
+    }, (error) => {
+      console.log(error.text);
+      Swal.fire({
+        icon: 'error',
+        title: 'Ooops, something went wrong',
+        text: error.text,
+      })
+    });
+  e.target.reset()
   };
+
 
   return (
     <>
-      <form className="contact_form" onSubmit={handleSubmit(onSubmit)}>
+      <form className="contact_form" onSubmit={handleSubmit} ref={form}>
         <div className="first_row">
           <input
-            {...register("name", { required: true })}
             type="text"
             placeholder="Name *"
+            name="from_name"
+            required
           />
-          {errors.name && errors.name.type === "required" && (
-            <span className="invalid-feedback">Name is required</span>
-          )}
         </div>
         {/* End .first_row */}
 
         <div className="second">
           <input
-            {...register(
-              "email",
-              {
-                required: "Email is Required",
-                pattern: {
-                  value: /\S+@\S+\.\S+/,
-                  message: "Entered value does not match email format",
-                },
-              },
-              { required: true }
-            )}
             type="email"
             placeholder="Email *"
+            name="from_email"
+            required
           />
-          {errors.email && (
-            <span className="invalid-feedback">{errors.email.message}</span>
-          )}
         </div>
         {/* End .second */}
 
         <div className="third">
-          <textarea
-            {...register("message", { required: true })}
+        <textarea
             placeholder="Message *"
+            name="message"
+            required
           ></textarea>
-          {errors.message && (
-            <span className="invalid-feedback">Message is required</span>
-          )}
         </div>
         {/* End .third */}
-
         <div className="edina_tm_button">
           <button type="submit" className="color">
             Submit

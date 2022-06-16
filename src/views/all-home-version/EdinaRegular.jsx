@@ -88,6 +88,19 @@ const EdinaHome = () => {
       </div>
       {/* End Services */}
       {/* START OF TESTIMONIAL */}
+      <div className="edina_tm_testimonials" id="testimonial">
+        <div className="container">
+          <div className="edina_tm_title">
+            <h3>Testimonials</h3>
+          </div>
+          {/* End edian_tm_title */}
+          <div className="list ">
+            <ul>
+              <Testimonial />
+            </ul>
+          </div>
+        </div>
+      </div>
 
  
     {/* END OF TESTIMONIAL */}

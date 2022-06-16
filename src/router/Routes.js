@@ -12,9 +12,7 @@ const Routes = () => {
       <Router>
         <ScrollTopBehaviour />
         <Switch>
-          <Route exact path="/" component={Preview} />
-          <Route exact path="/regular" component={EdinaRegular} />
-          <Route exact path="/rtl" component={EdinaRtl} />
+          <Route exact path="/" component={EdinaRegular} />
           <Route component={NotFound} />
         </Switch>
       </Router>

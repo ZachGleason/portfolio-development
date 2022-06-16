@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import instructor from '../../assets/instructor.jpeg'
 
 export default function Testimonial() {
   var settings = {
@@ -26,25 +27,25 @@ export default function Testimonial() {
 
   const testimonialContent = [
     {
-      img: "1",
-      desc: `Hi, I’m Alvara Atkins and I am designer &amp; developer who dream making the world better place by products. I am also very active for international clients.`,
-      name: "Alvara Atkins",
-      designation: "Marketing Manager",
+      desc: `Zach is a fantastic developer and technical resource. He is a hard worker who is committed to the craft of software development.
+      His code is clean, thoughtful, and well designed. He was always on top of the assignments, submitting ahead of time, and eager to learn more. He is also a great person and will surely be an asset to any team of any dynamic structure.`,
+      name: "Mahmoud Khudairi",
+      designation: "Instructor - Coding Dojo",
       delayAnimation: "",
     },
     {
-      img: "2",
-      desc: `These people really know what they are doing! Great customer support availability and supperb kindness. I am very happy that I've purchased this liscense!!!`,
-      name: "Fabian Gattuzo",
-      designation: "Photographer",
+      desc: `Zach has been a pleasure to have on our software development team, he is very well focused on his tasks and always delivers on time. He strives to 
+      improve his code everyday, and is always thinking of better ways to improve our product development`,
+      name: "AK Azaiez",
+      designation: "Founder - EggMed",
       delayAnimation: "100",
     },
     {
-      img: "3",
-      desc: `These people really know what they are doing! Great customer support availability and supperb kindness. I am very happy that I've purchased this liscense!!!`,
-      name: "Alizee Bonita",
-      designation: "App Developer",
-      delayAnimation: "200",
+      
+      desc: `Throughout bootcamp, Zach was a great person to collaborate with. He was quick to lend a helping hand and not afraid to ask for help when needed. I admire his work ethic and can’t wait to see how far he will go in his career in tech.`,
+      name: "Brandon Schumacher",
+      designation: "Graudate - Coding Dojo",
+      delayAnimation: "100",
     },
   ];
 
@@ -60,17 +61,6 @@ export default function Testimonial() {
           <div className="list_inner">
             <div className="details">
               <div className="author">
-                <div className="image">
-                  <div
-                    className="main"
-                    style={{
-                      backgroundImage: `url(${
-                        process.env.PUBLIC_URL +
-                        `img/testimonials/${val.img}.jpg`
-                      })`,
-                    }}
-                  ></div>
-                </div>
                 {/* End image */}
 
                 <div className="short">
@@ -79,12 +69,6 @@ export default function Testimonial() {
                 </div>
                 {/* End short description */}
               </div>
-              {/* End author */}
-
-              <div className="icon">
-                <img className="svg" src="img/svg/quote.svg" alt="quote" />
-              </div>
-              {/* End right quote icon */}
             </div>
 
             <div className="text">

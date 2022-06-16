@@ -2,7 +2,7 @@ import React from "react";
 import Social from "../Social";
 import ReactTyped from "react-typed";
 import zach from '../../assets/zach.jpg'
-import CV from '../../assets/CV.pdf'
+import CV from '../../assets/RESUME.pdf'
 
 
 const heroContent = {
