@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.06a601f8.chunk.css",
-    "main.js": "/static/js/main.9fd99f4d.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.51652e39.js",
+    "main.js": "/static/js/main.866a90fa.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.85f4b2c5.js",
     "static/css/2.3b1921d0.chunk.css": "/static/css/2.3b1921d0.chunk.css",
-    "static/js/2.e92dc353.chunk.js": "/static/js/2.e92dc353.chunk.js",
-    "static/js/3.1764fd8a.chunk.js": "/static/js/3.1764fd8a.chunk.js",
+    "static/js/2.5b6010d4.chunk.js": "/static/js/2.5b6010d4.chunk.js",
+    "static/js/3.16a3e9c9.chunk.js": "/static/js/3.16a3e9c9.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.e92dc353.chunk.js.LICENSE.txt": "/static/js/2.e92dc353.chunk.js.LICENSE.txt",
-    "static/media/CV.c1e1db36.pdf": "/static/media/CV.c1e1db36.pdf",
+    "static/js/2.5b6010d4.chunk.js.LICENSE.txt": "/static/js/2.5b6010d4.chunk.js.LICENSE.txt",
+    "static/media/RESUME-CV.9814068d.pdf": "/static/media/RESUME-CV.9814068d.pdf",
     "static/media/style.scss": "/static/media/hero-shape.08f0582e.svg",
     "static/media/instructor.14fe7729.jpeg": "/static/media/instructor.14fe7729.jpeg",
     "static/media/logo.08377f31.png": "/static/media/logo.08377f31.png",
@@ -16,10 +16,10 @@
     "static/media/zach.0ebd6448.jpg": "/static/media/zach.0ebd6448.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.51652e39.js",
+    "static/js/runtime-main.85f4b2c5.js",
     "static/css/2.3b1921d0.chunk.css",
-    "static/js/2.e92dc353.chunk.js",
+    "static/js/2.5b6010d4.chunk.js",
     "static/css/main.06a601f8.chunk.css",
-    "static/js/main.9fd99f4d.chunk.js"
+    "static/js/main.866a90fa.chunk.js"
   ]
 }

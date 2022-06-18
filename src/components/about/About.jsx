@@ -31,7 +31,7 @@ const About = () => {
               </h3>
               <p>
               A highly motivated, creative, and intuitive full-stack software engineer who has a huge passion for computers and anything technology related. 
-              Anything and everything that can be classified as technology excites me! Currently living in Sonoma County, Caliornia.
+              Anything and everything that can be classified as technology excites me! Currently living in Sonoma County, California.
               </p>
             </div>
             <div className="my_skills">
